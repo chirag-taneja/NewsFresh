@@ -81,7 +81,7 @@ ActivityMainBinding binding;
         }
     @Override
     public void onItemClicked(News obj) {
-        String url="https://developer.chrome.com/docs/android/custom-tabs/integration-guide";
+
         CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
         CustomTabsIntent customTabsIntent = builder.build();
         customTabsIntent.launchUrl(this, Uri.parse(obj.getUrl()));
